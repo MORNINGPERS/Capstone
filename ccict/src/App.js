@@ -1,0 +1,11 @@
+ //import './App.css';
+ //import Sidebar from './components/Sidebar';
+ import Header from './components/Header';
+
+function App() {
+  //return <div className='App'><Sidebar/>
+  //</div>
+   return <div className='App'><Header/>
+   </div>
+}
+export default App;

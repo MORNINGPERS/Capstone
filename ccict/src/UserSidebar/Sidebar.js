@@ -1,16 +1,15 @@
 import React from 'react'
-import '../Header.css';
+import './App.css';
+import { SidebarData } from './SidebarData';
 
-import { HeaderData } from './HeaderData';
-
-function Header() {
+function Sidebar() {
     return (
-        <div className='header'>
+        <div className='sidebar'>
             <div className="logo-container">
                 <img src="logo192.png" alt="Logo" className="logo" />
             </div>
-            <ul className='HeaderList'>
-                {HeaderData.map((val,key)=>{
+            <ul className='SidebarList'>
+                {SidebarData.map((val,key)=>{
                 return <list key={key}
                 className = "row"
                 id={window.location.pathname === val.link ? "active" : ""}
@@ -26,4 +25,4 @@ function Header() {
     );
 }
 
-export default Header
+export default Sidebar

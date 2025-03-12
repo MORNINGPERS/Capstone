@@ -1,0 +1,104 @@
+.admin-header-container {
+    display: flex;
+    width: 100%; /* Ensure the container takes full width */
+}
+
+.sidebar {
+    width: 250px; /* Fixed width with px */
+    background: #f8f9fa;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 20px;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    width: calc(100% - 250px);  /* Header width minus sidebar */
+    margin-left: 250px; /* Shift header right */
+    border-radius: 10px;
+    position: fixed; /* Fix header in place */
+    top: 0;
+    right: 0; /* Keep it aligned */
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+.admin-greeting h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.admin-greeting p {
+    margin: 0;
+    color: gray;
+}
+
+.admin-search {
+    display: flex;
+    align-items: center;
+    background: #f1f3f5;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.search-input {
+    border: none;
+    background: transparent;
+    outline: none;
+    padding-left: 8px;
+    width: 180px;
+}
+
+.search-icon {
+    color: gray;
+}
+
+.admin-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon {
+    cursor: pointer;
+    color: black;
+    font-size: 22px;
+    position: relative;
+}
+
+.icon::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 8px;
+    height: 8px;
+    background: red;
+    border-radius: 50%;
+}
+
+.admin-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-name {
+    font-weight: bold;
+}
+
+.profile-role {
+    font-size: 12px;
+    color: gray;
+}
